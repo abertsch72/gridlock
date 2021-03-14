@@ -13,3 +13,4 @@ func _ready():
 func _button_pressed():
 	print("starting game...")
 	get_tree().change_scene("res://PlayScene.tscn")
+	
