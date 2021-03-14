@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://ReturnToMainButton.gd" type="Script" id=1]
 [ext_resource path="res://Road.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Car.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Intersection.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
 
@@ -15,9 +17,20 @@ __meta__ = {
 }
 
 [node name="Road" parent="." instance=ExtResource( 2 )]
-position = Vector2( 333.736, 203.184 )
+position = Vector2( 654.846, 198.559 )
+scale = Vector2( 0.4, 0.4 )
 connection_1 = NodePath("../Road2")
 
 [node name="Road2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 678.064, 203.326 )
+position = Vector2( 792.846, 198.701 )
+scale = Vector2( 0.4, 0.4 )
 connection_1 = NodePath("../Road")
+
+[node name="Car1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 573.758, 190.529 )
+rotation = 3.15556
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Intersection" parent="." instance=ExtResource( 4 )]
+position = Vector2( 938.322, 198.351 )
+scale = Vector2( 0.2, 0.2 )
