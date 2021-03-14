@@ -14,6 +14,7 @@ export var ok_to_move = true
 
 
 func _ready():
+	currDirection = get_parent().direction
 	yield(get_tree(), "idle_frame")
 	# TODO: Not sure if i need to call a method on any other objects. Maybe scene to display car?
 	get_tree().call_group("", "", self)
