@@ -1,7 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://QuitButton.gd" type="Script" id=1]
-[ext_resource path="res://CreditsButton.gd" type="Script" id=2]
+
+[ext_resource path="res://StartGameButton.gd" type="Script" id=2]
+[ext_resource path="res://CreditsButton.gd" type="Script" id=3]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -26,7 +28,8 @@ margin_right = 1022.0
 margin_bottom = 198.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Level Select"
+text = "Start Game"
+script = ExtResource( 2 )
 
 [node name="CreditsButton" type="Button" parent="StartMenu"]
 margin_top = 202.0
@@ -35,7 +38,7 @@ margin_bottom = 400.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Credits"
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 
 [node name="QuitButton" type="Button" parent="StartMenu"]
 margin_top = 404.0
