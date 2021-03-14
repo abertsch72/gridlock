@@ -1,14 +1,18 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://GoBack.gd" type="Script" id=1]
+[ext_resource path="res://ALFIE.jpg" type="Texture" id=2]
 
 [node name="PopupDialog" type="Node2D"]
 
 [node name="CreditsText" type="Label" parent="."]
+margin_left = 505.0
 margin_top = 3.0
-margin_right = 1024.0
-margin_bottom = 597.0
+margin_right = 1009.0
+margin_bottom = 469.0
 text = "Credits
+
+Puppy... Alfie :)
 
 Lead Developers.... Rory Scobie, Amanda Bertsch, and Joseph Acevedo
 Other Developers.... A. Bertsch,  Joseph A.
@@ -26,12 +30,23 @@ __meta__ = {
 }
 
 [node name="GoBack" type="Button" parent="."]
-margin_left = 482.55
-margin_top = 498.929
-margin_right = 546.55
-margin_bottom = 518.929
+margin_left = 820.313
+margin_top = 509.335
+margin_right = 997.313
+margin_bottom = 571.335
 text = "Go Back"
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 11.2023
+margin_top = 93.0753
+margin_right = 4043.2
+margin_bottom = 3117.08
+rect_scale = Vector2( 0.12, 0.12 )
+texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
