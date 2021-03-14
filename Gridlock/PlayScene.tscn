@@ -1,3 +1,23 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ReturnToMainButton.gd" type="Script" id=1]
+[ext_resource path="res://Road.tscn" type="PackedScene" id=2]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+text = "Back To Main Menu"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Road" parent="." instance=ExtResource( 2 )]
+position = Vector2( 333.736, 203.184 )
+connection_1 = NodePath("../Road2")
+
+[node name="Road2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 678.064, 203.326 )
+connection_1 = NodePath("../Road")
