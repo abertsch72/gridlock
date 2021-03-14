@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://ReturnToMainButton.gd" type="Script" id=1]
 [ext_resource path="res://Road.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Car.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ScoreScreenUpdater.gd" type="Script" id=3]
 [ext_resource path="res://Intersection.tscn" type="PackedScene" id=4]
+[ext_resource path="res://RoadStartPoint.tscn" type="PackedScene" id=5]
+[ext_resource path="res://RoadEndPoint.tscn" type="PackedScene" id=6]
+[ext_resource path="res://End Button.gd" type="Script" id=7]
 
 [node name="Camera2D" type="Camera2D"]
 position = Vector2( 512, 301.367 )
@@ -19,21 +22,47 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Intersection" parent="." instance=ExtResource( 4 )]
+position = Vector2( 14.2543, -10.6908 )
+
 [node name="Road" parent="." instance=ExtResource( 2 )]
-position = Vector2( -40.0553, -54.4561 )
-scale = Vector2( 0.4, 0.4 )
-connection_1 = NodePath("../../Road2")
+position = Vector2( -241.048, -10.7632 )
 
 [node name="Road2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 97.9457, -54.314 )
-scale = Vector2( 0.4, 0.4 )
-connection_1 = NodePath("../../Road")
+position = Vector2( -114.035, -10.6908 )
 
-[node name="Car1" parent="." instance=ExtResource( 3 )]
-position = Vector2( -121.143, -62.4863 )
-rotation = -3.12763
-scale = Vector2( 0.2, 0.2 )
+[node name="Road3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 142.165, -10.7632 )
 
-[node name="Intersection" parent="." instance=ExtResource( 4 )]
-position = Vector2( 243.422, -54.6648 )
-scale = Vector2( 0.2, 0.2 )
+[node name="Road4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 269.178, -10.6908 )
+
+[node name="RoadStartPoint" parent="." instance=ExtResource( 5 )]
+position = Vector2( -339.361, 5.34668 )
+
+[node name="Node2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 368.328, 2.79492 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 380.295
+margin_top = -290.702
+margin_right = 492.295
+margin_bottom = -259.702
+text = "Cars Passed: 0/0
+Cars Stopped: 0/0"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="End Button" type="Button" parent="."]
+visible = false
+margin_left = -119.147
+margin_top = -213.193
+margin_right = 137.853
+margin_bottom = -193.193
+text = "You Won! Click here to return to menu"
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

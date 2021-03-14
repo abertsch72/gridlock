@@ -1,4 +1,4 @@
-extends Area2D
+extends StaticBody2D
 
 export(NodePath) var north_road
 export(NodePath) var south_road

@@ -36,7 +36,7 @@ margin_right = 1022.0
 margin_bottom = 400.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-text = "Credits"
+text = "Instructions and Credits"
 script = ExtResource( 3 )
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]

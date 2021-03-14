@@ -1,48 +1,51 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Intersection.gd" type="Script" id=1]
 [ext_resource path="res://arrows/yellowEWarrow.png" type="Texture" id=2]
 [ext_resource path="res://arrows/greenEWarrow.png" type="Texture" id=3]
-[ext_resource path="res://intersection.png" type="Texture" id=4]
+[ext_resource path="res://roads/roadNEWS.tga" type="Texture" id=4]
 [ext_resource path="res://IntersectionDirectionButton.gd" type="Script" id=5]
+[ext_resource path="res://arrows/greenNSarrow.png" type="Texture" id=6]
+[ext_resource path="res://arrows/yellowNSarrow.png" type="Texture" id=7]
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 380.903, 380.334 )
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 129.036, 19.0294 )
 
-[sub_resource type="AnimatedTexture" id=1]
-flags = 4
-frames = 2
-pause = true
-frame_0/texture = ExtResource( 3 )
-frame_1/texture = ExtResource( 2 )
-frame_1/delay_sec = 0.0
-
-[node name="Intersection" type="Area2D"]
+[node name="Intersection" type="StaticBody2D"]
+scale = Vector2( 0.5, 0.5 )
+collision_layer = 4
+collision_mask = 4
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 2 )
+position = Vector2( 1.49829, -108.627 )
+shape = SubResource( 1 )
+one_way_collision = true
 
-[node name="OpenDirectionMenuButton" type="Button" parent="."]
-margin_left = 139.578
-margin_top = -280.729
-margin_right = 196.578
-margin_bottom = -241.729
-text = "DIRECT"
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( 2.99661, 107.129 )
+rotation = 3.14159
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="EastWestButton" type="TextureButton" parent="."]
+modulate = Color( 1, 1, 1, 0.494118 )
+margin_left = -120.018
+margin_top = -51.5304
+margin_right = 121.982
+margin_bottom = 47.4696
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="EastWestButton" type="Button" parent="OpenDirectionMenuButton"]
-margin_left = -472.573
-margin_top = 58.9296
-margin_right = -230.573
-margin_bottom = 157.93
-icon = SubResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+EASTWEST_ICON = ExtResource( 3 )
+NORTHSOUTH_ICON = ExtResource( 6 )
+EASTWEST_PRESSED_ICON = ExtResource( 2 )
+NORTHSOUTH_PRESSED_ICON = ExtResource( 7 )

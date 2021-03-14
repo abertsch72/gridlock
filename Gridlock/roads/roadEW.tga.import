@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/intersection.png-67769dd63808112f82433a1ecf67f88b.stex"
+path="res://.import/roadEW.tga-19588b78d2ed9979ef44f32ce7db4b53.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://intersection.png"
-dest_files=[ "res://.import/intersection.png-67769dd63808112f82433a1ecf67f88b.stex" ]
+source_file="res://roads/roadEW.tga"
+dest_files=[ "res://.import/roadEW.tga-19588b78d2ed9979ef44f32ce7db4b53.stex" ]
 
 [params]
 
