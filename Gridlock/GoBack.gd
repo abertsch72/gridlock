@@ -11,9 +11,5 @@ func _ready():
 	self.connect("pressed", self, "_button_pressed")
 	
 func _button_pressed():
-	print("credits...")
-	get_tree().change_scene("res://Credits.tscn")
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	print("going back to main menu...")
+	get_tree().change_scene("res://MainMenu.tscn")

@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://GoBack.gd" type="Script" id=1]
+
+[node name="PopupDialog" type="Node2D"]
+
+[node name="CreditsText" type="Label" parent="."]
+margin_top = 3.0
+margin_right = 1024.0
+margin_bottom = 597.0
+text = "Credits
+
+Lead Developers.... Rory Scobie, Amanda Bertsch, and Joseph Acevedo
+Other Developers.... A. Bertsch,  Joseph A.
+Additional Development.... R. Scobie
+Development Support Lead.... J.R.A.
+Support of Development Lead.... R.H.S.
+Development Lead Support.... A.L.B.
+
+
+Sponsored by no one :("
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoBack" type="Button" parent="."]
+margin_left = 482.55
+margin_top = 498.929
+margin_right = 546.55
+margin_bottom = 518.929
+text = "Go Back"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
