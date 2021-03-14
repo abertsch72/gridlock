@@ -55,7 +55,7 @@ func get_x_move():
 		return 1
 	elif  currDirection == car_direction.WEST:
 		return -1
-	else
+	else:
 		return 0
 		
 func get_y_move():
@@ -63,7 +63,7 @@ func get_y_move():
 		return -1
 	elif  currDirection == car_direction.SOUTH:
 		return 1
-	else
+	else:
 		return 0
 
 func get_car_state():
