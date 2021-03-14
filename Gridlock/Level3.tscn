@@ -1,0 +1,315 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://RoadEndPoint.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Intersection.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Road.tscn" type="PackedScene" id=4]
+[ext_resource path="res://RoadStartPoint.tscn" type="PackedScene" id=5]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( -526.435, -290.718 )
+
+[node name="Intersection2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 237.932, 131.179 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road13" parent="." instance=ExtResource( 4 )]
+position = Vector2( -16.7754, 131.107 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road14" parent="." instance=ExtResource( 4 )]
+position = Vector2( 173.86, 131.179 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road15" parent="." instance=ExtResource( 4 )]
+position = Vector2( 110.238, 131.179 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road16" parent="." instance=ExtResource( 4 )]
+position = Vector2( 46.9124, 131.179 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road17" parent="." instance=ExtResource( 4 )]
+position = Vector2( 238.411, 4.12451 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road18" parent="." instance=ExtResource( 4 )]
+position = Vector2( 238.164, 67.4084 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road19" parent="." instance=ExtResource( 4 )]
+position = Vector2( 237.967, 194.505 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road20" parent="." instance=ExtResource( 4 )]
+position = Vector2( 237.767, 258.589 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road21" parent="." instance=ExtResource( 4 )]
+position = Vector2( 302.24, 130.912 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road22" parent="." instance=ExtResource( 4 )]
+position = Vector2( 366.205, 131.013 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road23" parent="." instance=ExtResource( 4 )]
+position = Vector2( 430.143, 131.073 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road24" parent="." instance=ExtResource( 4 )]
+position = Vector2( 494.369, 131.146 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Intersection3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 812.633, 131.179 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road25" parent="." instance=ExtResource( 4 )]
+position = Vector2( 558.486, 131.107 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road26" parent="." instance=ExtResource( 4 )]
+position = Vector2( 748.56, 131.179 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road27" parent="." instance=ExtResource( 4 )]
+position = Vector2( 684.939, 131.179 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road28" parent="." instance=ExtResource( 4 )]
+position = Vector2( 621.613, 131.179 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road29" parent="." instance=ExtResource( 4 )]
+position = Vector2( 813.111, 4.12451 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road30" parent="." instance=ExtResource( 4 )]
+position = Vector2( 812.865, 67.4084 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road31" parent="." instance=ExtResource( 4 )]
+position = Vector2( 812.667, 194.505 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road32" parent="." instance=ExtResource( 4 )]
+position = Vector2( 812.468, 258.589 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road33" parent="." instance=ExtResource( 4 )]
+position = Vector2( 876.941, 130.912 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road34" parent="." instance=ExtResource( 4 )]
+position = Vector2( 940.906, 131.013 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road35" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1004.84, 131.073 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road36" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1069.07, 131.146 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Intersection4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 812.071, 448.275 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road37" parent="." instance=ExtResource( 4 )]
+position = Vector2( 557.364, 448.202 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road38" parent="." instance=ExtResource( 4 )]
+position = Vector2( 747.999, 448.275 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road39" parent="." instance=ExtResource( 4 )]
+position = Vector2( 684.377, 448.275 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road40" parent="." instance=ExtResource( 4 )]
+position = Vector2( 621.051, 448.275 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road41" parent="." instance=ExtResource( 4 )]
+position = Vector2( 812.55, 321.781 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road42" parent="." instance=ExtResource( 4 )]
+position = Vector2( 812.304, 384.504 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road43" parent="." instance=ExtResource( 4 )]
+position = Vector2( 812.106, 511.6 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road44" parent="." instance=ExtResource( 4 )]
+position = Vector2( 811.907, 575.685 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road45" parent="." instance=ExtResource( 4 )]
+position = Vector2( 876.379, 448.007 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road46" parent="." instance=ExtResource( 4 )]
+position = Vector2( 940.344, 448.108 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road47" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1004.28, 448.169 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road48" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1068.51, 448.242 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Intersection5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 237.371, 448.836 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road49" parent="." instance=ExtResource( 4 )]
+position = Vector2( -17.3369, 448.763 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road50" parent="." instance=ExtResource( 4 )]
+position = Vector2( 173.298, 448.836 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road51" parent="." instance=ExtResource( 4 )]
+position = Vector2( 109.676, 448.836 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road52" parent="." instance=ExtResource( 4 )]
+position = Vector2( 46.3506, 448.836 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road53" parent="." instance=ExtResource( 4 )]
+position = Vector2( 237.849, 321.22 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road54" parent="." instance=ExtResource( 4 )]
+position = Vector2( 237.603, 385.065 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road55" parent="." instance=ExtResource( 4 )]
+position = Vector2( 237.406, 512.161 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road56" parent="." instance=ExtResource( 4 )]
+position = Vector2( 237.206, 576.246 )
+rotation = 1.5708
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road57" parent="." instance=ExtResource( 4 )]
+position = Vector2( 301.679, 448.568 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road58" parent="." instance=ExtResource( 4 )]
+position = Vector2( 365.644, 448.669 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road59" parent="." instance=ExtResource( 4 )]
+position = Vector2( 429.581, 448.73 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Road60" parent="." instance=ExtResource( 4 )]
+position = Vector2( 493.807, 447.681 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="RoadStartPoint17" parent="." instance=ExtResource( 5 )]
+position = Vector2( -72.5625, 463.262 )
+scale = Vector2( 0.05, 0.025 )
+
+[node name="Node2D18" parent="." instance=ExtResource( 2 )]
+position = Vector2( -73.5, 435.141 )
+rotation = 3.14159
+scale = Vector2( 0.05, 0.025 )
+
+[node name="RoadStartPoint19" parent="." instance=ExtResource( 5 )]
+position = Vector2( 250.227, 627.652 )
+rotation = -1.5708
+scale = Vector2( 0.05, 0.025 )
+direction = 0
+
+[node name="Node2D20" parent="." instance=ExtResource( 2 )]
+position = Vector2( 224.739, 628.633 )
+rotation = 1.5708
+scale = Vector2( 0.05, 0.025 )
+
+[node name="RoadStartPoint14" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1120.57, 437.105 )
+rotation = 3.14159
+scale = Vector2( 0.05, 0.025 )
+direction = 3
+
+[node name="Node2D13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1121.7, 463.116 )
+scale = Vector2( 0.05, 0.025 )
+
+[node name="RoadStartPoint15" parent="." instance=ExtResource( 5 )]
+position = Vector2( 824.928, 627.092 )
+rotation = -1.5708
+scale = Vector2( 0.05, 0.025 )
+direction = 0
+
+[node name="Node2D16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 799.439, 628.072 )
+rotation = 1.5708
+scale = Vector2( 0.05, 0.025 )
+
+[node name="RoadStartPoint10" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1121.13, 120.01 )
+rotation = 3.14159
+scale = Vector2( 0.05, 0.025 )
+direction = 3
+
+[node name="Node2D9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1122.26, 146.021 )
+scale = Vector2( 0.05, 0.025 )
+
+[node name="RoadStartPoint12" parent="." instance=ExtResource( 5 )]
+position = Vector2( 800.233, -48.0176 )
+rotation = 1.5708
+scale = Vector2( 0.05, 0.025 )
+direction = 1
+
+[node name="Node2D11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 824.419, -48.9746 )
+rotation = -1.5708
+scale = Vector2( 0.05, 0.025 )
+
+[node name="RoadStartPoint5" parent="." instance=ExtResource( 5 )]
+position = Vector2( -72.001, 145.604 )
+scale = Vector2( 0.05, 0.025 )
+
+[node name="Node2D6" parent="." instance=ExtResource( 2 )]
+position = Vector2( -72.9385, 117.483 )
+rotation = 3.14159
+scale = Vector2( 0.05, 0.025 )
+
+[node name="RoadStartPoint8" parent="." instance=ExtResource( 5 )]
+position = Vector2( 225.532, -48.0176 )
+rotation = 1.5708
+scale = Vector2( 0.05, 0.025 )
+direction = 1
+
+[node name="Node2D7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 249.718, -48.9746 )
+rotation = -1.5708
+scale = Vector2( 0.05, 0.025 )

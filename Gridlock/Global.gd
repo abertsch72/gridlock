@@ -7,11 +7,14 @@ extends Node
 var backed_up_to_start = false
 var num_cars_stopped = 0
 var num_cars_passed = 0
-const max_cars_stopped = 10 #lose condition
-const max_cars_passed = 10 #win condition
+var max_cars_stopped = 10 #lose condition
+var max_cars_passed = 10 #win condition
 
 var has_won = false
 var has_lost = false
+
+var level = 1
+var level_path = NodePath("res://Level1.tscn")
 
 
 # Called when the node enters the scene tree for the first time.

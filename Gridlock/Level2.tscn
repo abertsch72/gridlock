@@ -1,0 +1,141 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Intersection.gd" type="Script" id=1]
+[ext_resource path="res://RoadEndPoint.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Intersection.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Road.tscn" type="PackedScene" id=4]
+[ext_resource path="res://RoadStartPoint.tscn" type="PackedScene" id=5]
+[ext_resource path="res://RoadScript.gd" type="Script" id=6]
+[ext_resource path="res://RoadEndPoint.gd" type="Script" id=7]
+[ext_resource path="res://RoadStartPoint.gd" type="Script" id=8]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( -524.19, -285.105 )
+
+[node name="Intersection" type="StaticBody2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 526.254, 290.676 )
+scale = Vector2( 0.5, 0.5 )
+collision_layer = 4
+collision_mask = 4
+script = ExtResource( 1 )
+
+[node name="Road" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 14.678, 290.009 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road2" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 397.965, 290.676 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road11" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 270.125, 290.676 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road12" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 142.286, 290.676 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road5" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 526.312, 35.8048 )
+rotation = 1.5708
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road6" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 526.487, 163.838 )
+rotation = 1.5708
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road7" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 526.312, 417.442 )
+rotation = 1.5708
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road8" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 526.487, 545.475 )
+rotation = 1.5708
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road3" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 654.165, 290.604 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road9" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 782.005, 290.009 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road10" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 909.845, 290.009 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="Road4" type="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1038.05, 290.082 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 6 )
+
+[node name="RoadStartPoint" type="Area2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( -90.2095, 312.526 )
+scale = Vector2( 0.1, 0.05 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 8 )
+
+[node name="RoadStartPoint2" type="Area2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1136.69, 269.966 )
+rotation = 3.14159
+scale = Vector2( 0.1, 0.05 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 8 )
+direction = 3
+
+[node name="Node2D" type="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1137.82, 314.497 )
+scale = Vector2( 0.1, 0.05 )
+script = ExtResource( 7 )
+
+[node name="Node2D2" type="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( -90.7944, 271.677 )
+rotation = 3.14159
+scale = Vector2( 0.1, 0.05 )
+script = ExtResource( 7 )
+
+[node name="RoadStartPoint3" type="Area2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 545.857, 645.697 )
+rotation = -1.5708
+scale = Vector2( 0.1, 0.05 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 8 )
+direction = 0
+
+[node name="RoadStartPoint4" type="Area2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 504.887, -63.1379 )
+rotation = 1.5708
+scale = Vector2( 0.1, 0.05 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 8 )
+direction = 1
+
+[node name="Node2D3" type="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 541.344, -64.5676 )
+rotation = -1.5708
+scale = Vector2( 0.1, 0.05 )
+script = ExtResource( 7 )
+
+[node name="Node2D4" type="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 507.67, 647.073 )
+rotation = 1.5708
+scale = Vector2( 0.1, 0.05 )
+script = ExtResource( 7 )
