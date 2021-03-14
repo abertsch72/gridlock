@@ -5,11 +5,14 @@
 [ext_resource path="res://Car.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Intersection.tscn" type="PackedScene" id=4]
 
-[node name="Node2D" type="Node2D"]
+[node name="Camera2D" type="Camera2D"]
+position = Vector2( 512, 301.367 )
 
 [node name="Button" type="Button" parent="."]
-margin_right = 12.0
-margin_bottom = 20.0
+margin_left = -509.953
+margin_top = -300.427
+margin_right = -373.953
+margin_bottom = -280.427
 text = "Back To Main Menu"
 script = ExtResource( 1 )
 __meta__ = {
@@ -17,20 +20,20 @@ __meta__ = {
 }
 
 [node name="Road" parent="." instance=ExtResource( 2 )]
-position = Vector2( 654.846, 198.559 )
+position = Vector2( -40.0553, -54.4561 )
 scale = Vector2( 0.4, 0.4 )
-connection_1 = NodePath("../Road2")
+connection_1 = NodePath("../../Road2")
 
 [node name="Road2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 792.846, 198.701 )
+position = Vector2( 97.9457, -54.314 )
 scale = Vector2( 0.4, 0.4 )
-connection_1 = NodePath("../Road")
+connection_1 = NodePath("../../Road")
 
 [node name="Car1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 573.758, 190.529 )
-rotation = 3.15556
+position = Vector2( -121.143, -62.4863 )
+rotation = -3.12763
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Intersection" parent="." instance=ExtResource( 4 )]
-position = Vector2( 938.322, 198.351 )
+position = Vector2( 243.422, -54.6648 )
 scale = Vector2( 0.2, 0.2 )
